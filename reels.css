@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #0d0d0d;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.reel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  color: orange;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.upload-form {
+  margin-bottom: 30px;
+}
+
+input[type="file"], button {
+  padding: 10px 20px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 5px;
+}
+
+.video-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.reel {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  height: 1920px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.4);
+}
+
+.reel video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.like-btn, .comment-btn {
+  background: rgba(255, 102, 0, 0.8);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#loadMoreBtn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

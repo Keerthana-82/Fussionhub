@@ -1,0 +1,276 @@
+*{
+    box-sizing:border-box
+}
+/* General Styles */
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #000;
+    font-family:'lora', serif;
+}
+  h1, 
+  h2, 
+  h3,
+   h4, 
+   h5,
+   h6 {
+    font-family:'Candal',serif;
+    color:#444;
+    margin: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/* Header */
+header {
+    
+    background: #ffa500;
+    height:66px;
+}
+header * {
+    color: rgb(11, 11, 11);
+}
+
+/* Logo */
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2cm;
+    border:1px solid red;
+}
+header  ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+   
+}
+/* Navigation Menu */
+.nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav a {
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #ff5733;
+}
+.search-container {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .search-button {
+    background-color: #000;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-button i {
+    font-size: 16px;
+  }  
+/* Dropdown Menu */
+.nav ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav ul li a {
+
+    color: rgb(12, 12, 12);
+    padding: 10px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #ff5733;
+}
+
+.post-wrapper a:hover {
+color: #008489;
+}
+/*post slider*/
+.post-slider {
+    position: relative;
+    
+}
+.post-slider .slider-title {
+   text-align: center;
+   margin: 30px auto;
+}
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2cm;
+    color: #ff9305;
+    cursor: pointer;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2cm;
+    color: #ffa305;
+    cursor: pointer;
+}
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post {
+    width: 300px;
+    height: 330px;
+    margin: 0px 10px;
+    display: inline-block;
+ background: rgb(15, 14, 14);
+ border-radius: 5px;
+ box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+
+}
+.post-slider .post-wrapper .post.info {
+    height: 130px;
+    padding: 0px 10px 5px;
+}
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 200px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+   /*MEDIA QUERIES */
+@media only screen and (max-width:750px) {
+    header ul {
+        width: 100%;
+        background: #0E94A0;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+        background: inherit;
+    }
+    .nav ul li a {
+    
+        color: rgb(18, 17, 17);
+        padding: 10px;
+        display: block;
+    }
+    
+    .nav ul li a:hover {
+        background-color: #ff5733;
+    }
+    
+}
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1b1717;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #101010;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #e48a0b;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+button {
+    background-color: #ffa200;
+    color:black;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f0f0e;
+}
+
+.message {
+    margin-top: 10px;
+    text-align: center;
+    color: #161414;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    color: #ff9d00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
